@@ -1,0 +1,222 @@
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #667eea;
+  animation-name: h1Ani;
+
+  opacity: 1;
+  animation-delay: 2s;
+
+}
+
+.toolBar{
+
+background: rgba(0,0,0,0.5);
+color: white;
+height: 45px;
+padding: 0;
+overflow: hidden;
+
+}
+
+.elementsContrainer{
+  position: relative;
+}
+
+ul{
+  position: absolute;
+  right: 40px;
+  top: 0;
+  height: 45px;
+display: table-row;
+  margin: 0;
+}
+
+li:nth-child(1){
+  border-right: 1px solid white;
+  padding-right: 10px;
+}
+li:nth-child(2){
+
+padding: 10px 5px 0 5px;
+
+}
+li:nth-child(3){
+  border-left: 1px solid white;
+  padding-left: 10px;
+}
+
+li{
+
+
+  list-style: none;
+  display: inline-block;
+  padding-top: 10px;
+  height: 45px;
+  box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+}
+
+li:hover{
+  opacity: 0.5;
+}
+
+h3{
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px 0 10px 10px;
+  padding-top: 0;
+  font-weight: bold;
+}
+
+@keyframes h1Ani {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+body{
+
+background-image: linear-gradient(to right, #667eea, #764ba2);
+padding: 0;
+margin: 0;
+
+}
+.parent{
+  position: relative;
+  background-image: linear-gradient(to right,#ff9a9e, #fecfef);
+  padding: 20px;
+  border-radius: 20px;
+  width: 50%;
+  height: 150px;
+  margin: 0 auto 0 auto;
+  animation-name: parent;
+  animation-duration: 2s;
+  top: 150px;
+  box-shadow: 0 0px 13px rgba(0, 0, 0, 0.4);
+}
+@keyframes parent {
+  from{opacity: 0;
+  top: 0px;
+  }
+  to{opacity: 1;
+  top: 150px;}
+}
+
+input[type="text"]{
+  background: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #667eea;
+margin-left: 80px;
+  font-size: 30px;
+  color: #667eea;
+
+}
+
+button{
+  position: relative;
+  top: 10px;
+  right: -95px;
+  bottom: 4px;
+  background-color: #827CC5;
+  color: #fecfef;
+  margin: 0 0 0 10px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+::placeholder{
+  color: #667eea;
+  opacity: 0.2;
+}
+
+label{
+  color: #827CC5;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.form{
+
+position: absolute;
+top: 50%;
+left: 20%;
+width: 50;
+opacity: 1;
+animation-name: form;
+animation-duration: 5s;
+
+}
+
+@keyframes form {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.cityWithDegree{
+  padding: 40px;
+  background-image: linear-gradient(to right, #fecfef, #ff9a9e);
+  width: 200px;
+  margin: 10% auto 0 auto;
+  border-radius: 20px;
+
+  animation-name: cityAndDegree;
+  animation-duration: 2s;
+    box-shadow: 0 0px 13px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    animation-fill-mode: forwards;
+
+}
+.image{
+  padding: 40px;
+  width: 200px;
+  background-image: linear-gradient(to right, #fecfef, #ff9a9e);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  animation-name: weatherimage;
+  animation-duration: 2s;
+    box-shadow: 0 0px 13px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes  cityAndDegree{
+  from{width: 0;
+  opacity: 0;}
+  to{width: 400px;
+  opacity: 1;}
+}
+
+@keyframes  weatherimage{
+  from{width: 0;}
+  to{width: 200px;}
+}
+
+.cityName{
+  color: #667eea;
+animation-name: cityNameAni;
+animation-duration: 2s;
+}
+
+ .degree{
+   color: #667eea;
+animation-name: degreeAni;
+animation-duration: 2s;
+ }
+
+ @keyframes cityNameAni{
+
+ }
+
+ @keyframes degreeAni{
+
+ }
